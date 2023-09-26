@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="601.0" prefWidth="585.0" style=": ;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.carrentalmanage.controller.CustomerFormController">
+   <children>
+      <Label alignment="CENTER" layoutX="103.0" layoutY="13.0" prefHeight="46.0" prefWidth="372.0" text="Customer Manage" textFill="#e11148">
+         <font>
+            <Font name="System Italic" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textCustomerId" layoutX="29.0" layoutY="118.0" onAction="#textIdOnAction" prefHeight="25.0" prefWidth="149.0" promptText="Customer_Id" />
+      <TextField fx:id="textFirstName" layoutX="276.0" layoutY="118.0" prefHeight="25.0" prefWidth="282.0" promptText=" Fiirst_Name" />
+      <TableView fx:id="tableCustomer" layoutX="29.0" layoutY="336.0" prefHeight="234.0" prefWidth="529.0">
+         <columns>
+            <TableColumn fx:id="colId" prefWidth="41.0" text=" ID" />
+            <TableColumn fx:id="colNationalId" prefWidth="70.0" text=" National_ID" />
+            <TableColumn fx:id="colFirstName" text=" First_Name" />
+            <TableColumn fx:id="colMiddleName" prefWidth="84.0" text=" Middle_Name" />
+            <TableColumn fx:id="colAddress" prefWidth="171.0" text=" Address" />
+            <TableColumn fx:id="colPhone" prefWidth="81.0" text=" Phone" />
+         </columns>
+      </TableView>
+      <Button layoutX="323.0" layoutY="288.0" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="25.0" prefWidth="59.0" style="-fx-background-color: #74b9ff;" text=" Save">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="405.0" layoutY="288.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" style="-fx-background-color: #74b9ff;" text=" Update">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="482.0" layoutY="288.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" style="-fx-background-color: #74b9ff;" text=" Delete">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="30.0" layoutY="24.0" mnemonicParsing="false" onAction="#btnBackButtenOnAction" style="-fx-background-color: #74b9ff;" text=" Back">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="247.0" layoutY="288.0" mnemonicParsing="false" onAction="#btnClearOnAction" prefHeight="25.0" prefWidth="59.0" style="-fx-background-color: #74b9ff;" text="Clear">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="textNationalId" layoutX="29.0" layoutY="154.0" onAction="#textNationalIdOnAction" prefHeight="25.0" prefWidth="149.0" promptText="National_Id" />
+      <TextField fx:id="textAddress" layoutX="28.0" layoutY="234.0" prefHeight="25.0" prefWidth="529.0" promptText="Address" />
+      <TextField fx:id="textLastName" layoutX="276.0" layoutY="195.0" prefHeight="25.0" prefWidth="282.0" promptText="Last_Name" />
+      <TextField fx:id="textPhoneNumber" layoutX="29.0" layoutY="195.0" prefHeight="25.0" prefWidth="222.0" promptText="Phone_Number" />
+      <TextField fx:id="textMiddleName" layoutX="276.0" layoutY="154.0" prefHeight="25.0" prefWidth="282.0" promptText="Middle_Name" />
+   </children>
+</AnchorPane>

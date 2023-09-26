@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="601.0" prefWidth="585.0" style=": ;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.carrentalmanage.controller.CarCategoryFormController">
+   <children>
+      <Label alignment="CENTER" layoutX="103.0" layoutY="13.0" prefHeight="46.0" prefWidth="372.0" text=" Car Category Manage" textFill="#e11148">
+         <font>
+            <Font name="System Italic" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textCarCategoryId" layoutX="30.0" layoutY="83.0" onAction="#textIdOnAction" prefHeight="25.0" prefWidth="166.0" promptText="Catogory_ID" />
+      <TextField fx:id="textType" layoutX="246.0" layoutY="83.0" prefHeight="25.0" prefWidth="190.0" promptText=" Type" />
+      <TextArea fx:id="textDescription" layoutX="29.0" layoutY="126.0" prefHeight="138.0" prefWidth="529.0" promptText="Desription" />
+      <TableView fx:id="tableCarCategory" layoutX="29.0" layoutY="336.0" prefHeight="234.0" prefWidth="529.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="68.0" text=" Id" />
+          <TableColumn fx:id="colType" prefWidth="77.0" text="Type" />
+            <TableColumn fx:id="colDescription" prefWidth="396.0" text=" Description" />
+        </columns>
+      </TableView>
+      <Button layoutX="326.0" layoutY="288.0" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="25.0" prefWidth="59.0" style="-fx-background-color: #74b9ff;" text=" Save">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="407.0" layoutY="288.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" style="-fx-background-color: #74b9ff;" text=" Update">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="482.0" layoutY="288.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" style="-fx-background-color: #74b9ff;" text=" Delete">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="30.0" layoutY="24.0" mnemonicParsing="false" onAction="#btnBackButtenOnAction" style="-fx-background-color: #74b9ff;" text=" Back">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="246.0" layoutY="288.0" mnemonicParsing="false" onAction="#btnClearOnAction" prefHeight="25.0" prefWidth="59.0" style="-fx-background-color: #74b9ff;" text="Clear">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
