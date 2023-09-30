@@ -28,6 +28,37 @@ CREATE TABLE car(
     FOREIGN KEY (typeId)REFERENCES category(typeId)
 );
 
+CREATE TABLE rent(
+    rent_id varchar(30)PRIMARY KEY,
+    id varchar(15),
+    car_id varchar(15),
+    current_date_time TIMESTAMP,
+    due_date
+    FOREIGN KEY(id) REFERENCES customer (id),
+    FOREIGN KEY(car_id) REFERENCES car(car_id)
+);
+
+CREATE TABLE user(
+    user_id varchar(30),
+    employee_id varchar(30),
+    user_name varchar(50),
+    password varchar(200),
+    PRIMARY KEY(user_id,employee_id),
+    FOREIGN KEY(employee_id) REFERENCES employee(employee_id)
+);
+
+CREATE TABLE employee(
+    employee_id varchar(30),
+    national_id varchar(30),
+    first_name varchar(50) not null,
+    last_name varchar(50)not null,
+    DOB varchar(20)not null,
+    address text not null,
+    phone_num varchar(50)not null,
+    salary varchar(20)not null,
+    PRIMARY KEY(employee_id,national_id),
+);
+
 
 
 

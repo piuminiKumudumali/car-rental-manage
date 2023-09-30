@@ -12,42 +12,42 @@
          <children>
 
 
-            <Button layoutX="21.0" layoutY="36.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="136.0" text=" Car Catogory">
+            <Button layoutX="18.0" layoutY="36.0" mnemonicParsing="false" onAction="#btnCarCategoryOnAction" prefHeight="39.0" prefWidth="136.0" text=" Car Catogory">
                <font>
                   <Font size="17.0" />
                </font>
             </Button>
-            <Button layoutX="21.0" layoutY="86.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="136.0" text=" Car">
+            <Button layoutX="18.0" layoutY="91.0" mnemonicParsing="false" onAction="#btnCarOnAction" prefHeight="39.0" prefWidth="136.0" text=" Car">
                <font>
                   <Font size="17.0" />
                </font>
             </Button>
-            <Button layoutX="21.0" layoutY="139.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="136.0" text=" Customer">
+            <Button layoutX="18.0" layoutY="146.0" mnemonicParsing="false" onAction="#btnCustomerOnAction" prefHeight="39.0" prefWidth="136.0" text=" Customer">
                <font>
                   <Font size="17.0" />
                </font>
             </Button>
-            <Button layoutX="18.0" layoutY="282.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="136.0" text=" Rentals">
+            <Button layoutX="18.0" layoutY="199.0" mnemonicParsing="false" onAction="#btnRentalsOnAction" prefHeight="39.0" prefWidth="136.0" text=" Rent">
                <font>
                   <Font size="17.0" />
                </font>
             </Button>
-            <Button layoutX="21.0" layoutY="185.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="136.0" text=" Return">
+            <Button layoutX="18.0" layoutY="253.0" mnemonicParsing="false" onAction="#btnReturnOnAction" prefHeight="39.0" prefWidth="136.0" text=" Return">
                <font>
                   <Font size="17.0" />
                </font>
             </Button>
-            <Button layoutX="11.0" layoutY="509.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="136.0" text=" User">
+            <Button layoutX="18.0" layoutY="510.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="136.0" text=" User">
                <font>
                   <Font size="17.0" />
                </font>
             </Button>
-            <Button layoutX="11.0" layoutY="451.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="136.0" text=" Employee">
+            <Button layoutX="18.0" layoutY="451.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="136.0" text=" Employee">
                <font>
                   <Font size="17.0" />
                </font>
             </Button>
-            <Button alignment="CENTER" layoutX="18.0" layoutY="341.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="136.0" text=" OverDue_Rentals">
+            <Button alignment="CENTER" layoutX="18.0" layoutY="341.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="136.0" text=" OverDueRentals">
                <font>
                   <Font size="17.0" />
                </font>

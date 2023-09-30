@@ -1,14 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="lk.ijse.carrentalmanage.controller.RentFormController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="601.0" prefWidth="585.0" style=": ;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.carrentalmanage.controller.RentFormController">
+   <children>
+      <Label alignment="CENTER" layoutX="103.0" layoutY="13.0" prefHeight="46.0" prefWidth="372.0" text=" New Rent" textFill="#e11148">
+         <font>
+            <Font name="System Italic" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textCustomerId" layoutX="29.0" layoutY="78.0" onAction="#textIdOnAction" prefHeight="25.0" prefWidth="164.0" promptText=" Rent_Id" />
+      <Button layoutX="492.0" layoutY="211.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" style="-fx-background-color: #74b9ff;" text=" Delete">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="30.0" layoutY="24.0" mnemonicParsing="false" onAction="#btnBackButtenOnAction" style="-fx-background-color: #74b9ff;" text=" Back">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="408.0" layoutY="211.0" mnemonicParsing="false" onAction="#btnClearOnAction" prefHeight="25.0" prefWidth="59.0" style="-fx-background-color: #74b9ff;" text="Clear">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="322.0" layoutY="211.0" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="25.0" prefWidth="59.0" style="-fx-background-color: #74b9ff;" text=" Save">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ComboBox layoutX="29.0" layoutY="117.0" prefWidth="150.0" promptText="Customer_ID" />
+      <ComboBox layoutX="206.0" layoutY="78.0" prefHeight="25.0" prefWidth="174.0" promptText="Car_ID" />
+      <DatePicker layoutX="29.0" layoutY="154.0" prefHeight="25.0" prefWidth="164.0" promptText="Date" />
+      <DatePicker layoutX="207.0" layoutY="154.0" prefHeight="25.0" prefWidth="174.0" promptText="Due_Date" />
+      <TextField layoutX="401.0" layoutY="154.0" promptText="Rental_Fee" />
+      <Label layoutX="401.0" layoutY="78.0" prefHeight="25.0" prefWidth="149.0" text=" Daily_Rental_Rate" />
+      <TableView fx:id="tableRental" layoutX="68.0" layoutY="325.0" prefHeight="242.0" prefWidth="451.0">
+        <columns>
+          <TableColumn fx:id="colRentalId" prefWidth="75.0" text=" RentID" />
+          <TableColumn fx:id="colCustomer" prefWidth="75.0" text=" CustomerID" />
+            <TableColumn fx:id="colCarId" prefWidth="75.0" text=" CarID" />
+            <TableColumn fx:id="colRentDate" prefWidth="75.0" text=" Rent_Date" />
+            <TableColumn fx:id="colDueDate" prefWidth="75.0" text="Due_Date" />
+            <TableColumn fx:id="colRentalFee" prefWidth="75.0" text=" Fee" />
+        </columns>
+      </TableView>
+   </children>
 </AnchorPane>
